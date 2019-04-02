@@ -1,13 +1,14 @@
 {
   "name": "custom-tooltip-react",
-  "version": "0.7.7",
+  "version": "0.7.9",
   "main": "dist/Tooltip.js",
   "module": "dist/Tooltip.css",
   "repository": {
     "url": "github.com/ankitagnihotri/custom-tooltip-react"
   },
   "scripts": {
-    "build": "rollup -c -o dist/Tooltip.js"
+    "build": "rollup -c -o dist/Tooltip.js",
+    "start": "react-scripts start"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -24,6 +25,8 @@
     "classnames": "^2.2.5",
     "postcss-modules": "^1.1.0",
     "react": "^16.3.2",
+    "react-scripts": "2.1.8",
+    "react-dom": "^16.8.6",
     "rollup": "^0.58.2",
     "rollup-plugin-babel": "^3.0.4",
     "rollup-plugin-postcss": "^1.6.1",
@@ -32,7 +35,8 @@
   "peerDependencies": {
     "prop-types": "^15.6.0",
     "react": "^16.0.0",
-    "react-dom": "^16.0.0"
+    "react-dom": "^16.0.0",
+    "react-scripts": "2.1.8"
   },
   "dependencies": {
     "css-loader": "^2.1.1",

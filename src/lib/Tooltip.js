@@ -3,7 +3,7 @@
  * @Date:   2019-04-01T03:07:49+05:30
  * @Email:  ankit@minance.com
  * @Last modified by:   ankit
- * @Last modified time: 2019-04-01T13:41:28+05:30
+ * @Last modified time: 2019-04-02T18:16:17+05:30
  * @Copyright: Minance Technologies Private Limited
  */
 
@@ -32,16 +32,16 @@
    render() {
      let position = this.props.position
      return (
-       <span className='CustomTooltip' onMouseLeave={this.hideTooltip}>
+       <div className='CustomTooltip' onMouseLeave={this.hideTooltip}>
       {this.state.displayTooltip &&
         <div className={`CustomTooltipBubble CustomTooltip-${position}`}>
          <div className='CustomTooltipMessage' style={this.props.style}>{this.props.hoverText}</div>
          </div>
       }
-      <span onMouseOver={this.showTooltip}>
+      <div onMouseOver={this.showTooltip}>
         {this.props.children}
-      </span>
-    </span>
+      </div>
+    </div>
      );
    }
  };

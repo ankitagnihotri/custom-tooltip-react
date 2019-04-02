@@ -1,20 +1,15 @@
 {
   "name": "custom-tooltip-react",
-  "version": "0.3.0",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
-  "files": [ "dist", "README.md" ],
+  "version": "0.7.5",
+  "main": "src/lib",
+  "module": "src/lib",
   "repository": {
-    "type": "git",
-    "url": "ankitagnihotri/custom-tooltip-react"
+    "url": "github.com/ankitagnihotri/custom-tooltip-react"
   },
-  "dependencies": {
-    "user": "0.0.0"
-  },
-  "repository": "ankitagnihotri/custom-tooltip-react",
+
   "scripts": {
     "start": "react-scripts start",
-    "build": "rm -rf dist && NODE_ENV=production babel src/lib",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -28,6 +23,13 @@
     "not op_mini all"
   ],
   "devDependencies": {
-    "babel-cli": "^6.26.0"
+    "babel-cli": "^6.26.0",
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6",
+    "react-scripts": "2.1.8"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
   }
 }

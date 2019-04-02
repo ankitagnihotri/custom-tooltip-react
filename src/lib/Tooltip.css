@@ -3,7 +3,7 @@
 * @Date:   2019-04-01T03:08:07+05:30
 * @Email:  ankit@minance.com
  * @Last modified by:   ankit
- * @Last modified time: 2019-04-01T03:36:17+05:30
+ * @Last modified time: 2019-04-02T18:37:49+05:30
 * @Copyright: Minance Technologies Private Limited
 */
 
@@ -23,6 +23,7 @@ p {
 }
 
 .CustomTooltipBubble {
+  visibility: hidden;
   max-width: 300px;
   min-width: 120px;
   position: absolute;
@@ -102,4 +103,8 @@ p {
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;
+}
+
+.CustomTooltip:hover .CustomTooltipBubble {
+  visibility: visible;
 }

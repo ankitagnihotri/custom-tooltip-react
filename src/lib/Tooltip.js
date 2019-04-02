@@ -19,7 +19,9 @@ class Tooltip extends React.Component{
         <div className={`CustomTooltipBubble CustomTooltip-${position}`}>
         <div className='CustomTooltipMessage' style={this.props.style}>{this.props.hoverText}</div>
         </div>
-        <div>{this.props.children}</div>
+        <span>
+          {this.props.hoverComponentName}
+        </span>
       </div>
     );
   }

@@ -19,24 +19,28 @@ class App extends Component {
     return (
       <div className='container'>
         <p>
-         <Tooltip hoverText={'Hello, I am a super cool tooltip'}
+         <Tooltip hoverComponentName={"tooltip Top"}
+                  hoverText={'Hello, I am a super cool tooltip'}
                   position={'top'}
-                  style={customStyleTooltip}>tooltip Top</Tooltip>
+                  style={customStyleTooltip}/>
         </p>
         <p>
-        <Tooltip hoverText={'Hello, I am a super cool tooltip'}
+        <Tooltip hoverComponentName={"tooltip Bottom"}
+                 hoverText={'Hello, I am a super cool tooltip'}
                  position={'bottom'}
-                 style={customStyleTooltip}>tooltip Bottom</Tooltip>
+                 style={customStyleTooltip}/>
         </p>
         <p>
-        <Tooltip hoverText={'Hello, I am a super cool tooltip'}
-                position={'right'}
-                style={customStyleTooltip}>tooltip Right</Tooltip>
+        <Tooltip hoverComponentName={"tooltip Right"}
+                 hoverText={'Hello, I am a super cool tooltip'}
+                 position={'right'}
+                 style={customStyleTooltip}/>
         </p>
         <p>
-        <Tooltip hoverText={'Hello, I am a super cool tooltip'}
-                  position={'left'}
-                 style={customStyleTooltip}>tooltip Left</Tooltip>
+        <Tooltip hoverComponentName={"tooltip Left"}
+                 hoverText={'Hello, I am a super cool tooltip'}
+                 position={'left'}
+                 style={customStyleTooltip}/>
         </p>
       </div>
     );

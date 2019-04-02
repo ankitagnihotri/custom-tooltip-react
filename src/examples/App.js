@@ -3,11 +3,11 @@
  * @Date:   1985-10-26T13:45:00+05:30
  * @Email:  ankit@minance.com
  * @Last modified by:   ankit
- * @Last modified time: 2019-04-01T13:30:51+05:30
+ * @Last modified time: 2019-04-02T16:17:59+05:30
  * @Copyright: Minance Technologies Private Limited
  */
 import React, { Component } from 'react';
-import Tooltip from './tooltip'
+import Tooltip from './../lib/Tooltip'
 
 let customStyleTooltip = {
   backgroundColor: '#e7b770',

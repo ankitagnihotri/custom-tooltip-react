@@ -1,0 +1,110 @@
+/**
+* @Author: ankit
+* @Date:   2019-04-01T03:08:07+05:30
+* @Email:  ankit@minance.com
+ * @Last modified by:   ankit
+ * @Last modified time: 2019-04-02T18:37:49+05:30
+* @Copyright: Minance Technologies Private Limited
+*/
+
+.container {
+  margin-top: 120px;
+  text-align: center;
+}
+
+p {
+  margin-left: 200px;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.CustomTooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.CustomTooltipBubble {
+  visibility: hidden;
+  max-width: 300px;
+  min-width: 120px;
+  position: absolute;
+  z-index: 10;
+  }
+.CustomTooltipBubble::after {
+  content: '';
+  position: absolute;
+}
+
+.CustomTooltip-top {
+  bottom: 100%;
+  left: 50%;
+  padding-bottom: 9px;
+  transform: translateX(-50%);
+}
+.CustomTooltip-top::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-top: 9px solid #e7b770;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.CustomTooltip-bottom {
+  top: 100%;
+  left: 50%;
+  padding-top: 9px;
+  transform: translateX(-50%);
+}
+.CustomTooltip-bottom::after {
+  border-left: 9px solid transparent;
+  border-right: 9px solid transparent;
+  border-bottom: 9px solid #e7b770;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.CustomTooltip-left {
+  top: 50%;
+  right: 100%;
+  padding-right: 9px;
+  transform: translateY(-50%);
+}
+.CustomTooltip-left::after {
+  border-left: 9px solid #e7b770;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.CustomTooltip-right {
+  top: 50%;
+  left: 100%;
+  padding-left: 9px;
+  transform: translateY(-50%);
+}
+.CustomTooltip-right::after {
+  border-right: 9px solid #e7b770;
+  border-top: 9px solid transparent;
+  border-bottom: 9px solid transparent;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.CustomTooltipMessage {
+  background: #e7b770;
+  border-radius: 3px;
+  color: #fff;
+  line-height: 1.4;
+  padding: .75em;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.CustomTooltip:hover .CustomTooltipBubble {
+  visibility: visible;
+}

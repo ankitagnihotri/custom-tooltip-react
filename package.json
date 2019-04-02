@@ -1,6 +1,6 @@
 {
   "name": "custom-tooltip-react",
-  "version": "0.7.9",
+  "version": "0.7.10",
   "main": "dist/Tooltip.js",
   "module": "dist/Tooltip.css",
   "repository": {

@@ -1,16 +1,7 @@
-/**
- * @Author: ankit
- * @Date:   2019-04-01T03:07:49+05:30
- * @Email:  ankit@minance.com
- * @Last modified by:   ankit
- * @Last modified time: 2019-04-02T18:47:22+05:30
- * @Copyright: Minance Technologies Private Limited
- */
-
-import React from 'react';
+import React, { Component } from 'react';
 import './Tooltip.css';
 
-class Tooltip extends React.Component{
+class Tooltip extends Component{
   
   render() {
     let position = this.props.position

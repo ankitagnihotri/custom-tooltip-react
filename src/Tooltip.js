@@ -4,14 +4,13 @@ import './Tooltip.css';
 class Tooltip extends Component{
   
   render() {
-    let position = this.props.position
     return (
       <div className='CustomTooltip'>
-        <div className={`CustomTooltipBubble CustomTooltip-${position}`}>
-        <div className='CustomTooltipMessage' style={this.props.style}>{this.props.hoverText}</div>
+        <div className={`CustomTooltipBubble CustomTooltip-${this.props.placement}`}>
+        <div className='CustomTooltipMessage' style={this.props.style}>{this.props.tooltipMessage}</div>
         </div>
         <span>
-          {this.props.hoverComponentName}
+          {this.props.tooltipComponentLocation}
         </span>
       </div>
     );

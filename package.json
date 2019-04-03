@@ -1,45 +1,37 @@
 {
   "name": "custom-tooltip-react",
-  "version": "0.7.10",
-  "main": "dist/index.js",
-  "module": "dist/index.js",
+  "version": "0.7.12",
+  "private": false,
+  "main": "build/index.js",
   "repository": {
     "url": "github.com/ankitagnihotri/custom-tooltip-react"
   },
-  "scripts": {
-    "build": "rollup -c -o dist/index.js",
-    "start": "react-scripts start"
-  },
-  "eslintConfig": {
-    "extends": "react-app"
-  },
-  "browserslist": [
-    ">0.2%",
-    "not dead",
-    "not ie <= 11",
-    "not op_mini all"
-  ],
-  "devDependencies": {
-    "babel-core": "^6.26.3",
-    "babel-preset-react": "^6.24.1",
-    "classnames": "^2.2.5",
-    "postcss-modules": "^1.1.0",
-    "react": "^16.3.2",
-    "react-scripts": "2.1.8",
-    "react-dom": "^16.8.6",
-    "rollup": "^0.58.2",
-    "rollup-plugin-babel": "^3.0.4",
-    "rollup-plugin-postcss": "^1.6.1",
-    "rollup-plugin-uglify": "^3.0.0"
-  },
   "peerDependencies": {
-    "prop-types": "^15.6.0",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "2.1.8"
+    "react": "^16.8.6"
   },
   "dependencies": {
-    "css-loader": "^2.1.1",
-    "style-loader": "^0.23.1"
+    "react": "^16.8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "webpack --watch",
+    "build": "webpack"
+  },
+  "author": {
+    "name": "Ankit",
+    "email": "ankitkragnihotri@gmail.com"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.5.1",
+    "css-loader": "^2.0.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.28.3",
+    "webpack-cli": "^3.3.0"
   }
 }

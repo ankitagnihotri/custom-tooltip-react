@@ -87,7 +87,7 @@ p {
 }
 
 .CustomTooltipTextPaper {
-  background: currentColor;
+  background-color: currentColor;
   border-radius: 5px;
 }
 .CustomTooltipText {

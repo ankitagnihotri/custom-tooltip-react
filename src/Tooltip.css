@@ -89,10 +89,10 @@ p {
 .CustomTooltipTextPaper {
   background-color: currentColor;
   border-radius: 5px;
+  padding: 5px 5px;
 }
 .CustomTooltipText {
   color: #333;
-  padding: 5px 5px;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;

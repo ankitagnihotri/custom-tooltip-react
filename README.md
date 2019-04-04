@@ -1,4 +1,4 @@
-# Tooltip Component in React
+# A Tooltip Component in React
 A library of React components created using `create-react-app`.
 ## Installation
 Run the following command:
@@ -19,7 +19,8 @@ A basic understanding of React.js
 | tooltipComponentLocation      | String or JSX  | Element on which tooltip is hovered   |
 | tooltipMessage      | String or JSX     |  Content of tooltip   |
 | placement | String     |    right, left, top & bottom position |
-| style | object     |  Style of the element     |
+| tooltipTextPaperStyle | object     |  Style of the Tooltip message element     |
+| tipColor | String     |  HTML color codes, Hex color codes, RGB, etc.    |
 
 
 ### Examples
@@ -27,15 +28,17 @@ Example specific to react
 ```
 import Tooltip from 'custom-tooltip-react';
 
-  <Tooltip tooltipComponentLocation={"tooltip Button"}
-           tooltipMessage={'Hello, I am a super cool tooltip'}
-           placement={'bottom'} // you can give right, left, top & bottom position
-           style={customStyleTooltip}
-  />
+   <Tooltip tooltipComponentLocation={"Tooltip Right"}
+               tooltipMessage={'Hello, I am a super cool tooltip'}
+               placement={'top'}
+               tooltipTextPaperStyle={customStyle}
+               tipColor={'red'}
+   />
 
-  let customStyleTooltip = {
-    backgroundColor: '#e7b770',
-    color: '#333'
+  let customStyle = {
+    fontSize: '14px',
+    width: '150px',
+    backgroundColor: 'red'  // Also allowed HTML color codes, Hex color codes, RGB, etc.
   }
 ```
 

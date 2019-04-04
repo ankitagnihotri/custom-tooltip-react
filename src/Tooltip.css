@@ -19,6 +19,7 @@ p {
   min-width: 120px;
   position: absolute;
   z-index: 10;
+  color: #4BCFC5; 
   }
 .CustomTooltipBubble::after {
   content: '';
@@ -34,7 +35,7 @@ p {
 .CustomTooltip-top::after {
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-top: 9px solid #e7b770;
+  border-top: 9px solid currentColor;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -49,7 +50,7 @@ p {
 .CustomTooltip-bottom::after {
   border-left: 9px solid transparent;
   border-right: 9px solid transparent;
-  border-bottom: 9px solid #e7b770;
+  border-bottom: 9px solid currentColor;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -62,7 +63,7 @@ p {
   transform: translateY(-50%);
 }
 .CustomTooltip-left::after {
-  border-left: 9px solid #e7b770;
+  border-left: 9px solid currentColor;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
   top: 50%;
@@ -77,7 +78,7 @@ p {
   transform: translateY(-50%);
 }
 .CustomTooltip-right::after {
-  border-right: 9px solid #e7b770;
+  border-right: 9px solid currentColor;
   border-top: 9px solid transparent;
   border-bottom: 9px solid transparent;
   top: 50%;
@@ -85,12 +86,13 @@ p {
   transform: translateY(-50%);
 }
 
-.CustomTooltipMessage {
-  background: #e7b770;
-  border-radius: 3px;
-  color: #fff;
-  line-height: 1.4;
-  padding: .75em;
+.CustomTooltipTextPaper {
+  background: currentColor;
+  border-radius: 5px;
+}
+.CustomTooltipText {
+  color: #333;
+  padding: 5px 5px;
   text-align: center;
   text-overflow: ellipsis;
   overflow: hidden;

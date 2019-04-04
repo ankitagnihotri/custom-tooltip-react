@@ -6,8 +6,11 @@ class Tooltip extends Component{
   render() {
     return (
       <div className='CustomTooltip'>
-        <div className={`CustomTooltipBubble CustomTooltip-${this.props.placement}`}>
-        <div className='CustomTooltipMessage' style={this.props.style}>{this.props.tooltipMessage}</div>
+        <div className={`CustomTooltipBubble CustomTooltip-${this.props.placement}`} 
+             style={{color: `${this.props.tipColor}`}}>
+          <div className='CustomTooltipTextPaper CustomTooltipText' 
+                style={this.props.tooltipTextPaperStyle}>{this.props.tooltipMessage}
+          </div>
         </div>
         <span>
           {this.props.tooltipComponentLocation}

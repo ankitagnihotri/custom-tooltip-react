@@ -7,7 +7,7 @@ class Tooltip extends Component{
       <div className='CustomTooltip'>
         <div className={`CustomTooltipBubble CustomTooltip-${this.props.placement}`} style={{color: `${this.props.tipColor}`}}>
           <div className='CustomTooltipTextPaper' style={this.props.tooltipTextPaperStyle}>
-            <span className='CustomTooltipText'>{this.props.tooltipMessage}</span>
+            <div className='CustomTooltipText'>{this.props.tooltipMessage}</div>
           </div>
         </div>
         <span>

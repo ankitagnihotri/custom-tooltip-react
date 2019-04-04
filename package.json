@@ -1,6 +1,6 @@
 {
   "name": "custom-tooltip-react",
-  "version": "0.7.12",
+  "version": "0.7.13",
   "private": false,
   "main": "build/index.js",
   "repository": {

@@ -25,6 +25,8 @@ A basic understanding of React.js
 ### Examples
 Example specific to react
 ```
+import Tooltip from 'custom-tooltip-react';
+
   <Tooltip tooltipComponentLocation={"tooltip Button"}
            tooltipMessage={'Hello, I am a super cool tooltip'}
            placement={'bottom'} // you can give right, left, top & bottom position

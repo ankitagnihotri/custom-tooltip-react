@@ -29,13 +29,13 @@ p {
 .CustomTooltip-top {
   bottom: 100%;
   left: 50%;
-  padding-bottom: 9px;
+  padding-bottom: 7px;
   transform: translateX(-50%);
 }
 .CustomTooltip-top::after {
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-top: 9px solid currentColor;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-top: 7px solid currentColor;
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -44,13 +44,13 @@ p {
 .CustomTooltip-bottom {
   top: 100%;
   left: 50%;
-  padding-top: 9px;
+  padding-top: 7px;
   transform: translateX(-50%);
 }
 .CustomTooltip-bottom::after {
-  border-left: 9px solid transparent;
-  border-right: 9px solid transparent;
-  border-bottom: 9px solid currentColor;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 7px solid currentColor;
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -59,13 +59,13 @@ p {
 .CustomTooltip-left {
   top: 50%;
   right: 100%;
-  padding-right: 9px;
+  padding-right: 7px;
   transform: translateY(-50%);
 }
 .CustomTooltip-left::after {
-  border-left: 9px solid currentColor;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
+  border-left: 7px solid currentColor;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
   top: 50%;
   right: 0;
   transform: translateY(-50%);
@@ -74,13 +74,13 @@ p {
 .CustomTooltip-right {
   top: 50%;
   left: 100%;
-  padding-left: 9px;
+  padding-left: 7px;
   transform: translateY(-50%);
 }
 .CustomTooltip-right::after {
-  border-right: 9px solid currentColor;
-  border-top: 9px solid transparent;
-  border-bottom: 9px solid transparent;
+  border-right: 7px solid currentColor;
+  border-top: 7px solid transparent;
+  border-bottom: 7px solid transparent;
   top: 50%;
   left: 0;
   transform: translateY(-50%);
@@ -88,7 +88,7 @@ p {
 
 .CustomTooltipTextPaper {
   background-color: currentColor;
-  border-radius: 5px;
+  border-radius: 4px;
   padding: 5px 5px;
 }
 .CustomTooltipText {
